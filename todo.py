@@ -7,3 +7,8 @@ if __name__ == "__main__":
     tasks = add_task(tasks, "Learn Git")
     print(tasks)
 
+def mark_done(task_list, index):
+    if 0 <= index < len(task_list):
+        task_list[index]["done"] = True
+    return task_list
+
