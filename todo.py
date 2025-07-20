@@ -12,3 +12,8 @@ def mark_done(task_list, index):
         task_list[index]["done"] = True
     return task_list
 
+def add_task(task_list, task):
+    task_list.append({"task": task, "completed": False})  # changed key from 'done'
+    return task_list
+
+
